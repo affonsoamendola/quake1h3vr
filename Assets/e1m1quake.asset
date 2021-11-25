@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9ca90819b143909ef3b06721bb54cc, type: 3}
+  m_Name: e1m1quake
+  m_EditorClassIdentifier: 
+  SceneFile: {fileID: 102900000, guid: dc4650442b889e9458a5cd7be7fc37e7, type: 3}
+  SceneName: E1M1Quake
+  Mode: sandbox
+  Thumbnail: {fileID: 2800000, guid: fcf69bb2cd0efef438ac24c1eb6e3e7e, type: 3}
+  Author: AffonsoAmendola
+  Description: E1M1 from Quake! Now in H3VR!
