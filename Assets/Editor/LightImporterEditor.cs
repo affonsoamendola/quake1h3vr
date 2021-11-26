@@ -18,7 +18,7 @@ public class Light_import
 public class LightImporterEditor : Editor 
 {
 	public string directory = "./LightData/";
-	public string[] files;
+	public string[] files = new string[200];
 
 	public override void OnInspectorGUI()
     {
@@ -39,6 +39,7 @@ public class LightImporterEditor : Editor
 			using(StreamReader sr = File.OpenText(file))
             {
             	contents = sr.ReadToEnd();
+            	Debug.Log(contents);
             }
 
             Light_import new_light = JsonUtility.FromJson<Light_import>(contents);
