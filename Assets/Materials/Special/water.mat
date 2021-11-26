@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: water
-  m_Shader: {fileID: 4800000, guid: 1c81f7e9d2fc188439651fe0d9eb7857, type: 3}
+  m_Shader: {fileID: 4800000, guid: 6514f15e3ba06914e9555549e7912747, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -40,7 +40,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 00f389df0fd232c43ac8a4ddf6d79dec, type: 3}
-        m_Scale: {x: 12, y: 12}
+        m_Scale: {x: 6, y: 6}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
