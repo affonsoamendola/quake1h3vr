@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb9ca90819b143909ef3b06721bb54cc, type: 3}
   m_Name: SampleSandbox
   m_EditorClassIdentifier: 
-  SceneFile: {fileID: 102900000, guid: ef30ae312930ee24bb8757523a4e9657, type: 3}
+  SceneFile: {fileID: 102900000, guid: c0439e72f78213e4588d78579a300b21, type: 3}
   SceneName: Quake E1M1 - Sandbox
   Mode: sandbox
   Thumbnail: {fileID: 2800000, guid: b3445d9760974e94189966e72b9f8ab8, type: 3}
