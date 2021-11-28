@@ -4379,7 +4379,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 253930465}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -13.606, y: 2.082, z: 6.342}
+  m_LocalPosition: {x: -13.467, y: 2.082, z: 6.342}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8469,6 +8469,7 @@ GameObject:
   - component: {fileID: 627474751}
   - component: {fileID: 627474753}
   - component: {fileID: 627474752}
+  - component: {fileID: 627474754}
   m_Layer: 19
   m_Name: bsp_model_0
   m_TagString: Untagged
@@ -8586,6 +8587,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 627474750}
+  m_Mesh: {fileID: 4300000, guid: 4ae6567a0fead8d4ba0ddcc77bc4a1a0, type: 3}
+--- !u!64 &627474754
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 627474750}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 4ae6567a0fead8d4ba0ddcc77bc4a1a0, type: 3}
 --- !u!1 &629295363
 GameObject:
