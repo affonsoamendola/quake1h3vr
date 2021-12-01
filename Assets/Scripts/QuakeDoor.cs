@@ -45,12 +45,12 @@ public class QuakeDoor : MonoBehaviour {
 	{
 		if(state == QUAKE_DOOR_STATE.CLOSED)
 		{
-			gameObject.transform.position = closed_offset;
+			target_position = closed_offset;
 		}
 
 		if(state == QUAKE_DOOR_STATE.OPEN)
 		{
-			gameObject.transform.position = open_offset;
+			target_position = open_offset;
 		}
 	}
 
