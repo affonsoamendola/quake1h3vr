@@ -18,6 +18,7 @@ public class QuakeDoor : MonoBehaviour {
 	public bool recessed = false;
 
 	public bool auto_reset = false;
+	public QUAKE_DOOR_STATE auto_reset_default;
 	public float auto_reset_timer = 5.0f;
 	public float auto_reset_progress = 0.0f;
 
@@ -131,7 +132,8 @@ public class QuakeDoor : MonoBehaviour {
 			gameObject.transform.position = current_position;
 		}
 
-		if(auto_reset && state == QUAKE_DOOR_STATE.OPEN)
+		if(auto_reset && auto_reset_default == QUAKE_DOOR_STATE.CLOSED 
+			&& state == QUAKE_DOOR_STATE.OPEN)
 		{
 			auto_reset_progress += Time.deltaTime;
 
@@ -139,6 +141,18 @@ public class QuakeDoor : MonoBehaviour {
 			{
 				auto_reset_progress = 0.0f;
 				Close();
+			}
+		}
+
+		if(auto_reset && auto_reset_default == QUAKE_DOOR_STATE.OPEN 
+			&& state == QUAKE_DOOR_STATE.CLOSED)
+		{
+			auto_reset_progress += Time.deltaTime;
+
+			if(auto_reset_progress >= auto_reset_timer)
+			{
+				auto_reset_progress = 0.0f;
+				Open();
 			}
 		}
 	}

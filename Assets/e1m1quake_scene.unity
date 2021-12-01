@@ -526,6 +526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recessed: 1
   auto_reset: 0
+  auto_reset_default: 0
   auto_reset_timer: 5
   auto_reset_progress: 0
   closed_offset: {x: 0, y: 0, z: 0}
@@ -800,6 +801,7 @@ GameObject:
   - component: {fileID: 31895289}
   - component: {fileID: 31895288}
   - component: {fileID: 31895290}
+  - component: {fileID: 31895291}
   m_Layer: 0
   m_Name: bsp_model_29
   m_TagString: Untagged
@@ -875,6 +877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recessed: 0
   auto_reset: 0
+  auto_reset_default: 0
   auto_reset_timer: 5
   auto_reset_progress: 0
   closed_offset: {x: 0, y: 0, z: 0}
@@ -890,6 +893,24 @@ MonoBehaviour:
   duration_recess: 0
   state: 5
   recessed_state: 0
+--- !u!114 &31895291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 31895286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed078a92e0846f54ab5e293d71276554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  first: {fileID: 1408273718}
+  second: {fileID: 2032319174}
+  third: {fileID: 2103645868}
+  door: {fileID: 31895290}
+  first_pressed: 0
+  second_pressed: 0
+  third_pressed: 0
 --- !u!1 &34054919
 GameObject:
   m_ObjectHideFlags: 0
@@ -2087,6 +2108,7 @@ GameObject:
   - component: {fileID: 66245308}
   - component: {fileID: 66245307}
   - component: {fileID: 66245306}
+  - component: {fileID: 66245309}
   m_Layer: 0
   m_Name: bsp_model_43
   m_TagString: Untagged
@@ -2120,6 +2142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recessed: 1
   auto_reset: 0
+  auto_reset_default: 0
   auto_reset_timer: 5
   auto_reset_progress: 0
   closed_offset: {x: 0, y: 0, z: 0}
@@ -2177,6 +2200,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 66245304}
   m_Mesh: {fileID: 4300060, guid: 4ae6567a0fead8d4ba0ddcc77bc4a1a0, type: 3}
+--- !u!114 &66245309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 66245304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb932b8408af0b14198825898027e7d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 66245306}
+        m_MethodName: Open
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &79905930
 GameObject:
   m_ObjectHideFlags: 0
@@ -2463,8 +2513,8 @@ SpringJoint:
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: -0.125, y: 0, z: 0}
   serializedVersion: 2
-  m_Spring: 10
-  m_Damper: 2
+  m_Spring: 50
+  m_Damper: 10
   m_MinDistance: 0
   m_MaxDistance: 0
   m_Tolerance: 0.025
@@ -3230,6 +3280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recessed: 0
   auto_reset: 0
+  auto_reset_default: 0
   auto_reset_timer: 5
   auto_reset_progress: 0
   closed_offset: {x: 0, y: 0, z: 0}
@@ -4062,6 +4113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recessed: 0
   auto_reset: 0
+  auto_reset_default: 0
   auto_reset_timer: 5
   auto_reset_progress: 0
   closed_offset: {x: 0, y: 0, z: 0}
@@ -7692,6 +7744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recessed: 0
   auto_reset: 0
+  auto_reset_default: 0
   auto_reset_timer: 5
   auto_reset_progress: 0
   closed_offset: {x: 0, y: 0, z: 0}
@@ -7703,7 +7756,7 @@ MonoBehaviour:
   recess_delay: 1
   progress: 0
   progress_normalized: 0
-  duration: 0
+  duration: 1
   duration_recess: 0
   state: 0
   recessed_state: 0
@@ -9161,6 +9214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recessed: 1
   auto_reset: 0
+  auto_reset_default: 0
   auto_reset_timer: 5
   auto_reset_progress: 0
   closed_offset: {x: 0, y: 0, z: 0}
@@ -9654,6 +9708,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recessed: 0
   auto_reset: 0
+  auto_reset_default: 0
   auto_reset_timer: 5
   auto_reset_progress: 0
   closed_offset: {x: 0, y: 0, z: 0}
@@ -11654,6 +11709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recessed: 0
   auto_reset: 0
+  auto_reset_default: 0
   auto_reset_timer: 5
   auto_reset_progress: 0
   closed_offset: {x: 0, y: 0, z: 0}
@@ -14568,7 +14624,7 @@ GameObject:
   - component: {fileID: 1096353940}
   - component: {fileID: 1096353942}
   - component: {fileID: 1096353943}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: bsp_model_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14644,6 +14700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recessed: 0
   auto_reset: 1
+  auto_reset_default: 0
   auto_reset_timer: 5
   auto_reset_progress: 0
   closed_offset: {x: 0, y: 0, z: 0}
@@ -15975,6 +16032,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recessed: 0
   auto_reset: 1
+  auto_reset_default: 0
   auto_reset_timer: 3
   auto_reset_progress: 0
   closed_offset: {x: 0, y: 0, z: 0}
@@ -16191,6 +16249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recessed: 0
   auto_reset: 1
+  auto_reset_default: 0
   auto_reset_timer: 3
   auto_reset_progress: 0
   closed_offset: {x: 0, y: 0, z: 0}
@@ -16644,8 +16703,8 @@ SpringJoint:
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: -0.125, y: 0, z: 0}
   serializedVersion: 2
-  m_Spring: 10
-  m_Damper: 2
+  m_Spring: 50
+  m_Damper: 10
   m_MinDistance: 0
   m_MaxDistance: 0
   m_Tolerance: 0.025
@@ -17982,8 +18041,8 @@ SpringJoint:
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: -0.125, y: 0, z: 0}
   serializedVersion: 2
-  m_Spring: 10
-  m_Damper: 2
+  m_Spring: 50
+  m_Damper: 10
   m_MinDistance: 0
   m_MaxDistance: 0
   m_Tolerance: 0.025
@@ -18004,7 +18063,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 118
+  m_Constraints: 124
   m_CollisionDetection: 0
 --- !u!1 &1429991065
 GameObject:
@@ -18423,6 +18482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recessed: 1
   auto_reset: 0
+  auto_reset_default: 0
   auto_reset_timer: 5
   auto_reset_progress: 0
   closed_offset: {x: 0, y: 0, z: 0}
@@ -18537,6 +18597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recessed: 1
   auto_reset: 0
+  auto_reset_default: 0
   auto_reset_timer: 5
   auto_reset_progress: 0
   closed_offset: {x: 0, y: 0, z: 0}
@@ -19909,6 +19970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recessed: 1
   auto_reset: 0
+  auto_reset_default: 0
   auto_reset_timer: 5
   auto_reset_progress: 0
   closed_offset: {x: 0, y: 0, z: 0}
@@ -19924,6 +19986,104 @@ MonoBehaviour:
   duration_recess: 1
   state: 5
   recessed_state: 0
+--- !u!1 &1585710610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1585710615}
+  - component: {fileID: 1585710614}
+  - component: {fileID: 1585710613}
+  - component: {fileID: 1585710612}
+  - component: {fileID: 1585710611}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &1585710611
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1585710610}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &1585710612
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1585710610}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &1585710613
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1585710610}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1585710614
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1585710610}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1585710615
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1585710610}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.110540226, y: 0.77, z: -13.092}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1587435774
 GameObject:
   m_ObjectHideFlags: 0
@@ -20667,6 +20827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recessed: 1
   auto_reset: 0
+  auto_reset_default: 0
   auto_reset_timer: 5
   auto_reset_progress: 0
   closed_offset: {x: 0, y: 0, z: 0}
@@ -20850,6 +21011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recessed: 0
   auto_reset: 0
+  auto_reset_default: 0
   auto_reset_timer: 5
   auto_reset_progress: 0
   closed_offset: {x: 0, y: 0, z: 0}
@@ -23590,8 +23752,8 @@ SpringJoint:
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: -0.15, y: 0, z: 0}
   serializedVersion: 2
-  m_Spring: 10
-  m_Damper: 2
+  m_Spring: 50
+  m_Damper: 10
   m_MinDistance: 0
   m_MaxDistance: 0
   m_Tolerance: 0.025
@@ -24321,6 +24483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recessed: 0
   auto_reset: 1
+  auto_reset_default: 0
   auto_reset_timer: 3
   auto_reset_progress: 0
   closed_offset: {x: 0, y: 0, z: 0}
@@ -24694,6 +24857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recessed: 0
   auto_reset: 0
+  auto_reset_default: 0
   auto_reset_timer: 5
   auto_reset_progress: 0
   closed_offset: {x: 0, y: 0, z: 0}
@@ -25350,8 +25514,8 @@ SpringJoint:
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: -0.125, y: 0, z: 0}
   serializedVersion: 2
-  m_Spring: 10
-  m_Damper: 2
+  m_Spring: 50
+  m_Damper: 10
   m_MinDistance: 0
   m_MaxDistance: 0
   m_Tolerance: 0.025
@@ -26289,8 +26453,8 @@ SpringJoint:
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: -0.125, y: 0, z: 0}
   serializedVersion: 2
-  m_Spring: 10
-  m_Damper: 2
+  m_Spring: 50
+  m_Damper: 10
   m_MinDistance: 0
   m_MaxDistance: 0
   m_Tolerance: 0.025
@@ -26311,7 +26475,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 118
+  m_Constraints: 124
   m_CollisionDetection: 0
 --- !u!1 &2110681255
 GameObject:
