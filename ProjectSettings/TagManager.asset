@@ -8,11 +8,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  -
+  - 
   - Water
   - UI
-  -
-  -
+  - 
+  - 
   - NoCol
   - HandTrigger
   - Interactable
@@ -31,8 +31,8 @@ TagManager:
   - PlayerAndRBTrigger
   - Smoke
   - AIEntity
-  -
-  -
+  - 
+  - 
   - ExternalCamOnly
   - Distant
   - Burning

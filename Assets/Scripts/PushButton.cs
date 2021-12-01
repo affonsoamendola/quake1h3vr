@@ -1,72 +1,88 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PushButton : MonoBehaviour 
 {
 	public bool activated = false;
 
-	public Transform off_position;
+	public UnityEvent trigger;
+
 	public Transform on_position;
+	public Transform reset_position;
 
-	public float reset_duration;
-	public float progress;
+	public float reset_time = 1.0f;
+	public float reset_timer_progress = 0.0f;
 
-	public Vector3 enter_contact_pos;
-	public Vector3 offset;
-	public float projection;
+	public MeshRenderer mesh_renderer;
+	Material[] mats;
 
-	int environment_layer;
+	public Material on_button;
+	public Material off_button;
 
-	void Start()
+	public bool blink_state;
+
+	public float blink_rate = 0.2f;
+	public float blink_progess = 0.0f;
+
+	public void Start()
 	{
-		environment_layer = LayerMask.NameToLayer("Environment");
+		mesh_renderer = gameObject.GetComponent<MeshRenderer>();
+		mats = mesh_renderer.materials;
 	}
 
-	public bool GetNonEnvironmentFirstContact(Collision collision, ref Vector3 contact_pos)
+	public void Activate()
 	{
-		foreach(ContactPoint contact_point in collision.contacts)
+		activated = true;
+		trigger.Invoke();
+		gameObject.transform.position = on_position.position;
+		gameObject.GetComponent<Rigidbody>().isKinematic = true;
+
+		mats[1] = off_button;
+		mesh_renderer.materials = mats;
+	}
+
+	public void DeActivate()
+	{
+		activated = false;
+		gameObject.transform.position = reset_position.position;
+		gameObject.GetComponent<Rigidbody>().isKinematic = false;
+	}
+		
+	public void Update()
+	{
+		if(activated)
 		{
-			if(contact_point.otherCollider.gameObject.layer == environment_layer)
+			reset_timer_progress += Time.deltaTime;
+
+			if(reset_timer_progress > reset_time)
 			{
-				continue;
-			}
-			else
-			{	
-				contact_pos = contact_point.point;
-				return true;
+				DeActivate();
+				reset_timer_progress = 0.0f;
 			}
 		}
+		else
+		{
+			blink_progess += Time.deltaTime;
 
-		return false;
-	}
+			if(blink_progess > blink_rate)
+			{
+				blink_progess = 0.0f;
 
-	void OnCollisionEnter(Collision collision)
-	{
-		GetNonEnvironmentFirstContact(collision, ref enter_contact_pos);
-	}
+				blink_state = !blink_state;
 
-	void OnCollisionStay(Collision collision)
-	{
-		Vector3 contact_pos = new Vector3();		
-		GetNonEnvironmentFirstContact(collision, ref contact_pos);
+				if(blink_state)
+				{	
+					mats[1] = on_button;
+				} 
+				else
+				{
+					mats[1] = off_button;
+				}
 
-		offset = contact_pos - enter_contact_pos;
-
-		Vector3 normal = on_position.position - off_position.position;
-
-		projection = Vector3.Dot(offset, normal);
-
-		transform.position = transform.position + projection * normal;
-	}
-
-	void OnCollisionExit(Collision collision)
-	{
-		enter_contact_pos = Vector3.zero;
-	}
-
-	void Update()
-	{
-
+				mesh_renderer.materials = mats;
+			}
+		}
 	}
 }

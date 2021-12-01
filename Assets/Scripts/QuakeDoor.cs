@@ -17,6 +17,10 @@ public class QuakeDoor : MonoBehaviour {
 
 	public bool recessed = false;
 
+	public bool auto_reset = false;
+	public float auto_reset_timer = 5.0f;
+	public float auto_reset_progress = 0.0f;
+
 	public Vector3 closed_offset;
 	public Vector3 recess_offset;
 	public Vector3 open_offset;
@@ -125,6 +129,17 @@ public class QuakeDoor : MonoBehaviour {
 
 			current_position = Vector3.Lerp(start_position, target_position, progress_normalized);
 			gameObject.transform.position = current_position;
+		}
+
+		if(auto_reset && state == QUAKE_DOOR_STATE.OPEN)
+		{
+			auto_reset_progress += Time.deltaTime;
+
+			if(auto_reset_progress >= auto_reset_timer)
+			{
+				auto_reset_progress = 0.0f;
+				Close();
+			}
 		}
 	}
 
