@@ -5,13 +5,15 @@ using UnityEngine.Events;
 
 public class PushButton : MonoBehaviour 
 {
-	public bool activated = false;
+	public bool activated = false; //Has been pressed
+	public bool disabled = false; //Wont be possible to press
 
 	public UnityEvent trigger;
 
 	public Transform on_position;
 	public Transform reset_position;
 
+	public bool reset_enabled = true;
 	public float reset_time = 1.0f;
 	public float reset_timer_progress = 0.0f;
 
@@ -30,6 +32,28 @@ public class PushButton : MonoBehaviour
 	{
 		mesh_renderer = gameObject.GetComponent<MeshRenderer>();
 		mats = mesh_renderer.materials;
+
+		if(disabled)
+		{
+			Disable();
+		}
+	}
+
+	public void Enable()
+	{
+		disabled = false;
+		DeActivate();
+	}
+
+	public void Disable()
+	{
+		gameObject.transform.position = on_position.position;
+		gameObject.GetComponent<Rigidbody>().isKinematic = true;
+
+		mats[1] = off_button;
+		mesh_renderer.materials = mats;
+
+		disabled = true;
 	}
 
 	public void Activate()
@@ -52,7 +76,12 @@ public class PushButton : MonoBehaviour
 		
 	public void Update()
 	{
-		if(activated)
+		if(disabled)
+		{
+			return;
+		}
+
+		if(activated && reset_enabled)
 		{
 			reset_timer_progress += Time.deltaTime;
 
@@ -62,7 +91,8 @@ public class PushButton : MonoBehaviour
 				reset_timer_progress = 0.0f;
 			}
 		}
-		else
+		
+		if(!activated)
 		{
 			blink_progess += Time.deltaTime;
 
