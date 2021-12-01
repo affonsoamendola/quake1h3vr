@@ -159,6 +159,7 @@ public class QuakeDoor : MonoBehaviour {
 
 	public void Open()
 	{
+
 		if(state == QUAKE_DOOR_STATE.CLOSED) 
 		{
 			progress = 0.0f;

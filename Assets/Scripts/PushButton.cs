@@ -47,24 +47,27 @@ public class PushButton : MonoBehaviour
 
 	public void Disable()
 	{
+		disabled = true;
+
 		gameObject.transform.position = on_position.position;
 		gameObject.GetComponent<Rigidbody>().isKinematic = true;
 
 		mats[1] = off_button;
 		mesh_renderer.materials = mats;
-
-		disabled = true;
 	}
 
 	public void Activate()
 	{
-		activated = true;
-		trigger.Invoke();
-		gameObject.transform.position = on_position.position;
-		gameObject.GetComponent<Rigidbody>().isKinematic = true;
+		if(!disabled)
+		{
+			activated = true;
+			trigger.Invoke();
+			gameObject.transform.position = on_position.position;
+			gameObject.GetComponent<Rigidbody>().isKinematic = true;
 
-		mats[1] = off_button;
-		mesh_renderer.materials = mats;
+			mats[1] = off_button;
+			mesh_renderer.materials = mats;
+		}
 	}
 
 	public void DeActivate()
