@@ -13,11 +13,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PackageName: QuakeE1M1
   Author: affonsoamendola
-  Version: 0.0.3
+  Version: 1.0.0
   Icon: {fileID: 2800000, guid: 20cbfc9e1e2f87945b79942ba514e772, type: 3}
   ReadMe: {fileID: 102900000, guid: 0ef972042aeb3144a87158168db7cdbc, type: 3}
   WebsiteURL: https://github.com/affonsoamendola/quake1h3vr
-  Description: Quake E1M1 for H3VR
+  Description: Quake's E1M1 for H3VR Sandbox
   AdditionalDependencies: []
   BuildItems:
   - {fileID: 11400000, guid: 743feee478302dc40b7c0e261ccf78ea, type: 2}

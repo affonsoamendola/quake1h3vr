@@ -16,8 +16,29 @@ MonoBehaviour:
   Mode: sandbox
   Thumbnail: {fileID: 2800000, guid: b3445d9760974e94189966e72b9f8ab8, type: 3}
   Author: Affonso Amendola
-  Description: 'E1M1 from Quake!
+  Description: 'This is my port of E1M1 from Quake!
 
-    Now with sosigs and Unity''s lightmapper.
 
-    Looks pretty cool, ngl'
+    Features:
+
+    - Doors! (Proximity or triggerable)
+
+    - Secret Areas (They are empty in sandbox, but you can put stuff there!)
+
+    - Push Buttons (I dont know how to make them pushable by hand, so use a weapon
+    to push them, or just shoot at them)
+
+
+    I''m currently working on adding Quake''s sounds and the sky animation.
+
+
+    Also I want this to be the basis for a a "speedrun" gamemode of sorts, I''ll populate
+    the map with sosigs where they would be in Quake, and lets see how long you take
+    to complete it in VR!
+
+
+    Original Creator is the LEGENDARY John Romero (Please dont sue, this is a labour
+    of love!)
+
+
+    Many Thanks to nrgill28 for the help and for Atlas!'
