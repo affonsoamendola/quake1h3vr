@@ -51,5 +51,4 @@ public class QuakeSpecialDoor : MonoBehaviour
 			door.Open();
 		}
 	}
-	
 }
