@@ -3,7 +3,7 @@ https://github.com/affonsoamendola/quake1h3vr
 
 This is my port of Quake's E1M1 for Hotdogs, Horseshoes and Handgrenades.
 
-Feel free to send me a dm via Discord should you find any bugs, or @ me on the modding server there, everything SHOULD be working properly, but you never know. 
+Feel free to send me a dm via Discord (AffonsoAmendola#3532) or Twitter (@AmendolaAffonso) should you find any bugs, or @ me on the modding server there, everything SHOULD be working properly, but you never know. 
 
 Features:
 - Push Buttons! (I dont know how to make them pushable with an empty hand, without being able to pull them out of the "socket", but you can push them with weapons and other objects, or just shoot them!)

@@ -10,6 +10,10 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 
+/QuakeSpasm/
+/TrenchBroom/
+
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
@@ -95,3 +99,4 @@ AssetBundles/
 /[Aa]ssets/Editor/x64.meta
 /[Aa]ssets/BakeryLightmaps/
 /[Aa]ssets/BakeryLightmaps.meta
+*.meta

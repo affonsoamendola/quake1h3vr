@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9ca90819b143909ef3b06721bb54cc, type: 3}
+  m_Name: TakeAndHold
+  m_EditorClassIdentifier: 
+  SceneFile: {fileID: 102900000, guid: c0439e72f78213e4588d78579a300b21, type: 3}
+  SceneName: Quake E1M1 - TakeAndHold
+  Mode: takeandhold
+  Thumbnail: {fileID: 2800000, guid: b3445d9760974e94189966e72b9f8ab8, type: 3}
+  Author: Affonso Amendola
+  Description: "This is my port of E1M1 from Quake!\n\nFeatures:\n- Doors! \n- Elevators!\n-
+    Secret Areas! \n- Push Buttons! \n- Blinking Lights!"

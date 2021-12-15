@@ -13,33 +13,35 @@ public enum QUAKE_DOOR_STATE
 	CLOSING
 };
 
-public class QuakeDoor : MonoBehaviour {
+public class QuakeDoor : MonoBehaviour 
+{
+	public QUAKE_DOOR_STATE state = QUAKE_DOOR_STATE.CLOSED;
+
+	public Vector3 closed_offset;
+	public Vector3 open_offset;
+
+	public float duration; //Time between door closed and door open or door recessed 
 
 	public bool recessed = false;
+	public Vector3 recess_offset;
+	public float recess_delay = 1.0f; //In seconds
+	public float duration_recess; //Time between door recessed and door open
 
 	public bool auto_reset = false;
 	public QUAKE_DOOR_STATE auto_reset_default;
+
 	public float auto_reset_timer = 5.0f;
-	public float auto_reset_progress = 0.0f;
+	private float auto_reset_progress = 0.0f;
 
-	public Vector3 closed_offset;
-	public Vector3 recess_offset;
-	public Vector3 open_offset;
+	private Vector3 start_position;
+	private Vector3 current_position;
+	private Vector3 target_position;
 
-	public Vector3 start_position;
-	public Vector3 current_position;
-	public Vector3 target_position;
+	private float progress;
+	private float progress_normalized;
 
-	public float recess_delay = 1.0f; //In seconds
-
-	public float progress;
-	public float progress_normalized;
-
-	public float duration; //Time between door closed and door open or door recessed 
-	public float duration_recess; //Time between door recessed and door open
-
-	public QUAKE_DOOR_STATE state = QUAKE_DOOR_STATE.CLOSED;
-	public QUAKE_DOOR_STATE recessed_state;
+	
+	private QUAKE_DOOR_STATE recessed_state;
 	
 	void Start()
 	{
@@ -53,7 +55,6 @@ public class QuakeDoor : MonoBehaviour {
 			target_position = open_offset;
 		}
 	}
-
 
 	// Update is called once per frame
 	void Update () 

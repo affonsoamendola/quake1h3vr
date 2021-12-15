@@ -18,7 +18,7 @@ namespace MeatKit
     [CreateAssetMenu(menuName = "MeatKit/Build Items/Atlas Scene", fileName = "New scene")]
     public class AtlasSceneBuildItem : BuildItem
     {
-        private static readonly string[] WellKnownModes = {"sandbox"};
+        private static readonly string[] WellKnownModes = {"sandbox", "takeandhold"};
 
         [Tooltip("Drag and drop your scene asset file here.")]
         public SceneAsset SceneFile;
