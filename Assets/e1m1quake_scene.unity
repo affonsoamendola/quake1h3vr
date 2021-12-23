@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -470,7 +470,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &21221263
 MeshRenderer:
@@ -525,24 +525,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88493cf040d5a024c8d600c4502ad9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 5
+  closed_offset: {x: 0, y: 0, z: 0}
+  open_offset: {x: 0.375, y: 0, z: -1.5}
+  duration: 1
   recessed: 1
+  recess_offset: {x: 0.375, y: 0, z: 0}
+  recess_delay: 1
+  duration_recess: 1
   auto_reset: 0
   auto_reset_default: 0
   auto_reset_timer: 5
-  auto_reset_progress: 0
-  closed_offset: {x: 0, y: 0, z: 0}
-  recess_offset: {x: 0.375, y: 0, z: 0}
-  open_offset: {x: 0.375, y: 0, z: -1.5}
-  start_position: {x: 0, y: 0, z: 0}
-  current_position: {x: 0, y: 0, z: 0}
-  target_position: {x: 0, y: 0, z: 0}
-  recess_delay: 1
-  progress: 0
-  progress_normalized: 0
-  duration: 1
-  duration_recess: 1
-  state: 5
-  recessed_state: 0
 --- !u!65 &21221266
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -833,7 +826,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &31895288
 MeshRenderer:
@@ -888,24 +881,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88493cf040d5a024c8d600c4502ad9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 5
+  closed_offset: {x: 0, y: 0, z: 0}
+  open_offset: {x: 3.75, y: 0, z: 0}
+  duration: 2
   recessed: 0
+  recess_offset: {x: 0, y: 0, z: 0}
+  recess_delay: 1
+  duration_recess: 0
   auto_reset: 0
   auto_reset_default: 0
   auto_reset_timer: 5
-  auto_reset_progress: 0
-  closed_offset: {x: 0, y: 0, z: 0}
-  recess_offset: {x: 0, y: 0, z: 0}
-  open_offset: {x: 3.75, y: 0, z: 0}
-  start_position: {x: 0, y: 0, z: 0}
-  current_position: {x: 0, y: 0, z: 0}
-  target_position: {x: 0, y: 0, z: 0}
-  recess_delay: 1
-  progress: 0
-  progress_normalized: 0
-  duration: 2
-  duration_recess: 0
-  state: 5
-  recessed_state: 0
 --- !u!114 &31895291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2141,7 +2127,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.124999, z: 3.124999}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!114 &66245306
 MonoBehaviour:
@@ -2154,24 +2140,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88493cf040d5a024c8d600c4502ad9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 5
+  closed_offset: {x: 0, y: 0, z: 0}
+  open_offset: {x: -1.5, y: 0, z: 0.37}
+  duration: 1
   recessed: 1
+  recess_offset: {x: 0, y: 0, z: 0.37}
+  recess_delay: 1
+  duration_recess: 1
   auto_reset: 1
   auto_reset_default: 5
   auto_reset_timer: 5
-  auto_reset_progress: 0
-  closed_offset: {x: 0, y: 0, z: 0}
-  recess_offset: {x: 0, y: 0, z: 0.37}
-  open_offset: {x: -1.5, y: 0, z: 0.37}
-  start_position: {x: -16.097813, y: 1.8703123, z: -1.3396875}
-  current_position: {x: 0, y: 0, z: 0}
-  target_position: {x: -17.725, y: 1.8687497, z: -0.93437517}
-  recess_delay: 1
-  progress: 0
-  progress_normalized: 0
-  duration: 1
-  duration_recess: 1
-  state: 5
-  recessed_state: 0
 --- !u!23 &66245307
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3423,7 +3402,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &173029639
 MeshRenderer:
@@ -3478,24 +3457,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88493cf040d5a024c8d600c4502ad9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 5
+  closed_offset: {x: 0, y: 0, z: 0}
+  open_offset: {x: -2, y: 0, z: 0}
+  duration: 1
   recessed: 0
+  recess_offset: {x: 0, y: 0, z: 0}
+  recess_delay: 1
+  duration_recess: 0
   auto_reset: 1
   auto_reset_default: 5
   auto_reset_timer: 3
-  auto_reset_progress: 0
-  closed_offset: {x: 0, y: 0, z: 0}
-  recess_offset: {x: 0, y: 0, z: 0}
-  open_offset: {x: -2, y: 0, z: 0}
-  start_position: {x: 0, y: 0, z: 0}
-  current_position: {x: 0, y: 0, z: 0}
-  target_position: {x: 0, y: 0, z: 0}
-  recess_delay: 1
-  progress: 0
-  progress_normalized: 0
-  duration: 1
-  duration_recess: 0
-  state: 5
-  recessed_state: 0
 --- !u!64 &173029642
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4257,7 +4229,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.124998, z: 3.124998}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &217739481
 MeshRenderer:
@@ -4312,24 +4284,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88493cf040d5a024c8d600c4502ad9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 5
+  closed_offset: {x: 0, y: 0, z: 0}
+  open_offset: {x: 0, y: -9.7, z: 0}
+  duration: 3
   recessed: 0
+  recess_offset: {x: 0, y: 0, z: 0}
+  recess_delay: 1
+  duration_recess: 0
   auto_reset: 1
   auto_reset_default: 5
   auto_reset_timer: 2.5
-  auto_reset_progress: 0
-  closed_offset: {x: 0, y: 0, z: 0}
-  recess_offset: {x: 0, y: 0, z: 0}
-  open_offset: {x: 0, y: -9.7, z: 0}
-  start_position: {x: 0, y: 0, z: 0}
-  current_position: {x: 0, y: 0, z: 0}
-  target_position: {x: 0, y: 0, z: 0}
-  recess_delay: 1
-  progress: 0
-  progress_normalized: 0
-  duration: 3
-  duration_recess: 0
-  state: 5
-  recessed_state: 0
 --- !u!64 &217739484
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7714,7 +7679,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &520028816
 MeshRenderer:
@@ -7883,7 +7848,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &531828029
 MeshRenderer:
@@ -7950,24 +7915,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88493cf040d5a024c8d600c4502ad9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 0
+  closed_offset: {x: 0, y: 0, z: 0}
+  open_offset: {x: 0, y: 0, z: 5.625}
+  duration: 1
   recessed: 0
+  recess_offset: {x: 0, y: 0, z: 0}
+  recess_delay: 1
+  duration_recess: 0
   auto_reset: 0
   auto_reset_default: 0
   auto_reset_timer: 5
-  auto_reset_progress: 0
-  closed_offset: {x: 0, y: 0, z: 0}
-  recess_offset: {x: 0, y: 0, z: 0}
-  open_offset: {x: 0, y: 0, z: 5.625}
-  start_position: {x: 0, y: 0, z: 0}
-  current_position: {x: 0, y: 0, z: 0}
-  target_position: {x: 0, y: 0, z: 0}
-  recess_delay: 1
-  progress: 0
-  progress_normalized: 0
-  duration: 1
-  duration_recess: 0
-  state: 0
-  recessed_state: 0
 --- !u!1 &536966221
 GameObject:
   m_ObjectHideFlags: 0
@@ -8715,149 +8673,6 @@ MonoBehaviour:
   m_radius: 0
   m_length: 0
   m_hasSpecularHightlight: 1
---- !u!1 &627474750
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 4ae6567a0fead8d4ba0ddcc77bc4a1a0, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 627474751}
-  - component: {fileID: 627474753}
-  - component: {fileID: 627474752}
-  - component: {fileID: 627474754}
-  m_Layer: 19
-  m_Name: bsp_model_0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &627474751
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 4ae6567a0fead8d4ba0ddcc77bc4a1a0, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 627474750}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
-  m_Children: []
-  m_Father: {fileID: 1587435775}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &627474752
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: 4ae6567a0fead8d4ba0ddcc77bc4a1a0,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 627474750}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: cf2b642f027e80c4ab8f6babb2473c2a, type: 2}
-  - {fileID: 2100000, guid: 26fa59ad83787a94b8047fa55078d5bd, type: 2}
-  - {fileID: 2100000, guid: f6b6030e9c4565747887a187ad8da9a5, type: 2}
-  - {fileID: 2100000, guid: 96ef99af539e8944aab2342a8b1ffa4e, type: 2}
-  - {fileID: 2100000, guid: 266ef24bd7b98204a86c71a55764aa80, type: 2}
-  - {fileID: 2100000, guid: 739aa30a5ef19034d92fba0be1422f81, type: 2}
-  - {fileID: 2100000, guid: 45efc1bc47be3d847ad7ca7fad4cf8f3, type: 2}
-  - {fileID: 2100000, guid: cc8c943fe01c993418f8391e5f5d4683, type: 2}
-  - {fileID: 2100000, guid: bf9cb9af7d0a3444fbaa672b922cde88, type: 2}
-  - {fileID: 2100000, guid: e398d3e31cd11a14cb32ed9c528f4530, type: 2}
-  - {fileID: 2100000, guid: 536af9ce0aa457241b785868e603d59c, type: 2}
-  - {fileID: 2100000, guid: 870a9e8a20b53714e836c56f80cfca2d, type: 2}
-  - {fileID: 2100000, guid: e1944c774b2374c44a978835aa503a62, type: 2}
-  - {fileID: 2100000, guid: 960dc19d89a99424eb5d03f28efe716d, type: 2}
-  - {fileID: 2100000, guid: 6f2432f9e849924439910db4b1500719, type: 2}
-  - {fileID: 2100000, guid: 992d0cce8d8f33a4ead16fd7629eb0fe, type: 2}
-  - {fileID: 2100000, guid: 83aa9468862de7f4bb37438fa6302bc7, type: 2}
-  - {fileID: 2100000, guid: 08946ab066293d34e963b20fbed33a08, type: 2}
-  - {fileID: 2100000, guid: 098f35020ea56bc448417b278115c150, type: 2}
-  - {fileID: 2100000, guid: 7e2e424115216fa49b9371184175df61, type: 2}
-  - {fileID: 2100000, guid: 74f546c6284bae843932073b08cd23f3, type: 2}
-  - {fileID: 2100000, guid: 4ef7244dc625e4f4ca2dd3ab9136134c, type: 2}
-  - {fileID: 2100000, guid: 328c5cd009e73574ca6038e3e8d2f45a, type: 2}
-  - {fileID: 2100000, guid: 612b65db987e9034992cbe42480038ae, type: 2}
-  - {fileID: 2100000, guid: 5b5d5c7e16905a442880f47361ade476, type: 2}
-  - {fileID: 2100000, guid: dd4d6df164ae8464ab6af832c990e33d, type: 2}
-  - {fileID: 2100000, guid: 03cf2dac72a6bbf42857432c666c26b2, type: 2}
-  - {fileID: 2100000, guid: 5f2fcf72bf838ab4fb67716040ce6a78, type: 2}
-  - {fileID: 2100000, guid: 5974810e383bb4b458db375b5a0017af, type: 2}
-  - {fileID: 2100000, guid: 12892250c8a2e054ea8dd9cf1131ab4d, type: 2}
-  - {fileID: 2100000, guid: 78d5ec93c063a9141a4e9f199d810ca4, type: 2}
-  - {fileID: 2100000, guid: d86e579b797c4b14c8ec9131d404b3bd, type: 2}
-  - {fileID: 2100000, guid: 36912cf2cb64eca4e8a981cea2f0a87e, type: 2}
-  - {fileID: 2100000, guid: cce0243cd4de0114e9f3b08ee1251018, type: 2}
-  - {fileID: 2100000, guid: 94bb295da645c8c4d8fc6202d2bdf941, type: 2}
-  - {fileID: 2100000, guid: d60cb74e72c423e4285528ee29aa3251, type: 2}
-  - {fileID: 2100000, guid: 23308982536adce42a7faaab86ea7cca, type: 2}
-  - {fileID: 2100000, guid: c010a485db83e244a815c3633af3017b, type: 2}
-  - {fileID: 2100000, guid: 7ac51d5b025688146b7e1eb18675230a, type: 2}
-  - {fileID: 2100000, guid: d27206f90e92fb84b8f48fe68a337cb1, type: 2}
-  - {fileID: 2100000, guid: 8b192440889de6c46bb979c2716615d2, type: 2}
-  - {fileID: 2100000, guid: e0ebd69bd3a303a4791fbc4d80dae477, type: 2}
-  - {fileID: 2100000, guid: 5660c291af7633146a3d92120dae7b65, type: 2}
-  - {fileID: 2100000, guid: e5ae15a48a3831448ba9b9a3184d4887, type: 2}
-  - {fileID: 2100000, guid: 19144e6318da3d4449435e508353218d, type: 2}
-  - {fileID: 2100000, guid: bb9f76837d2bf184bbe00a6c3f0018b3, type: 2}
-  - {fileID: 2100000, guid: c2a0f8ef3d6691e438e775348a6d2f43, type: 2}
-  - {fileID: 2100000, guid: e662c77c92b3a6341b332bcfd9d25a17, type: 2}
-  - {fileID: 2100000, guid: 087ea84b4ae906c4393bbfd2014ae609, type: 2}
-  - {fileID: 2100000, guid: c6fd64389f633174db29f30ffe4b00db, type: 2}
-  - {fileID: 2100000, guid: ffe9f1d58faf1fd47983591fc8d4dbc4, type: 2}
-  - {fileID: 2100000, guid: ed4aa28e9a291b0479e94d68b04df80c, type: 2}
-  - {fileID: 2100000, guid: 24b4d491c47be6945b3a7d33ce389a12, type: 2}
-  - {fileID: 2100000, guid: 4954b5ec0edf0bf4fa59ed409a55c565, type: 2}
-  - {fileID: 2100000, guid: 512b549dc88f5214c96d5adfa9a51829, type: 2}
-  - {fileID: 2100000, guid: 7a07d6fb34ab781409208d1486d2613e, type: 2}
-  - {fileID: 2100000, guid: c5124a6d4548d2a48843ff7ee144c67b, type: 2}
-  - {fileID: 2100000, guid: d4dcb49b86d6fbf46a6071177e03f7af, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 1
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &627474753
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3300000, guid: 4ae6567a0fead8d4ba0ddcc77bc4a1a0,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 627474750}
-  m_Mesh: {fileID: 4300000, guid: 4ae6567a0fead8d4ba0ddcc77bc4a1a0, type: 3}
---- !u!64 &627474754
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 627474750}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 4ae6567a0fead8d4ba0ddcc77bc4a1a0, type: 3}
 --- !u!1 &629295363
 GameObject:
   m_ObjectHideFlags: 0
@@ -9294,7 +9109,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &666576384
 MeshRenderer:
@@ -9349,24 +9164,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88493cf040d5a024c8d600c4502ad9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 5
+  closed_offset: {x: 0, y: 0, z: 0}
+  open_offset: {x: -0.375, y: 0, z: 3}
+  duration: 3
   recessed: 1
+  recess_offset: {x: -0.375, y: 0, z: 0}
+  recess_delay: 1
+  duration_recess: 0
   auto_reset: 0
   auto_reset_default: 0
   auto_reset_timer: 5
-  auto_reset_progress: 0
-  closed_offset: {x: 0, y: 0, z: 0}
-  recess_offset: {x: -0.375, y: 0, z: 0}
-  open_offset: {x: -0.375, y: 0, z: 3}
-  start_position: {x: 0, y: 0, z: 0}
-  current_position: {x: 0, y: 0, z: 0}
-  target_position: {x: 0, y: 0, z: 0}
-  recess_delay: 1
-  progress: 0
-  progress_normalized: 0
-  duration: 3
-  duration_recess: 0
-  state: 5
-  recessed_state: 0
 --- !u!65 &666576387
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9802,7 +9610,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &691920394
 MeshRenderer:
@@ -9856,24 +9664,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88493cf040d5a024c8d600c4502ad9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 5
+  closed_offset: {x: 0, y: 0, z: 0}
+  open_offset: {x: 0, y: 0, z: -2.275}
+  duration: 0
   recessed: 0
+  recess_offset: {x: 0, y: 0, z: 0}
+  recess_delay: 1
+  duration_recess: 0
   auto_reset: 0
   auto_reset_default: 0
   auto_reset_timer: 5
-  auto_reset_progress: 0
-  closed_offset: {x: 0, y: 0, z: 0}
-  recess_offset: {x: 0, y: 0, z: 0}
-  open_offset: {x: 0, y: 0, z: -2.275}
-  start_position: {x: 0, y: 0, z: 0}
-  current_position: {x: 0, y: 0, z: 0}
-  target_position: {x: 0, y: 0, z: 0}
-  recess_delay: 1
-  progress: 0
-  progress_normalized: 0
-  duration: 0
-  duration_recess: 0
-  state: 5
-  recessed_state: 0
 --- !u!65 &691920397
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12187,7 +11988,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &822912928
 MeshRenderer:
@@ -12242,24 +12043,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88493cf040d5a024c8d600c4502ad9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 5
+  closed_offset: {x: 0, y: 0, z: 0}
+  open_offset: {x: 0, y: 0, z: 2.85}
+  duration: 0
   recessed: 0
+  recess_offset: {x: 0, y: 0, z: 0}
+  recess_delay: 1
+  duration_recess: 0
   auto_reset: 0
   auto_reset_default: 0
   auto_reset_timer: 5
-  auto_reset_progress: 0
-  closed_offset: {x: 0, y: 0, z: 0}
-  recess_offset: {x: 0, y: 0, z: 0}
-  open_offset: {x: 0, y: 0, z: 2.85}
-  start_position: {x: 0, y: 0, z: 0}
-  current_position: {x: 0, y: 0, z: 0}
-  target_position: {x: 0, y: 0, z: 0}
-  recess_delay: 1
-  progress: 0
-  progress_normalized: 0
-  duration: 0
-  duration_recess: 0
-  state: 5
-  recessed_state: 0
 --- !u!65 &822912931
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14419,6 +14213,178 @@ MonoBehaviour:
   m_radius: 0
   m_length: 0
   m_hasSpecularHightlight: 1
+--- !u!1 &1019463789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: cc52c8694040fb048adf819690824290, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1019463794}
+  - component: {fileID: 1019463793}
+  - component: {fileID: 1019463792}
+  - component: {fileID: 1019463791}
+  - component: {fileID: 1019463790}
+  m_Layer: 19
+  m_Name: bsp_model_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!132 &1019463790
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1019463789}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: 
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 02e1ec925816f854aa4c86f121cc844f, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!64 &1019463791
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1019463789}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: cc52c8694040fb048adf819690824290, type: 3}
+--- !u!23 &1019463792
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: cc52c8694040fb048adf819690824290,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1019463789}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 739aa30a5ef19034d92fba0be1422f81, type: 2}
+  - {fileID: 2100000, guid: cce0243cd4de0114e9f3b08ee1251018, type: 2}
+  - {fileID: 2100000, guid: d27206f90e92fb84b8f48fe68a337cb1, type: 2}
+  - {fileID: 2100000, guid: 96ef99af539e8944aab2342a8b1ffa4e, type: 2}
+  - {fileID: 2100000, guid: 098f35020ea56bc448417b278115c150, type: 2}
+  - {fileID: 2100000, guid: 08946ab066293d34e963b20fbed33a08, type: 2}
+  - {fileID: 2100000, guid: d7939cfbf6e07d940a061d875266c059, type: 2}
+  - {fileID: 2100000, guid: 7e2e424115216fa49b9371184175df61, type: 2}
+  - {fileID: 2100000, guid: d4dcb49b86d6fbf46a6071177e03f7af, type: 2}
+  - {fileID: 2100000, guid: a32d7917e8ee1714dbaf95808f6c76fd, type: 2}
+  - {fileID: 2100000, guid: d86e579b797c4b14c8ec9131d404b3bd, type: 2}
+  - {fileID: 2100000, guid: cf2b642f027e80c4ab8f6babb2473c2a, type: 2}
+  - {fileID: 2100000, guid: 6f2432f9e849924439910db4b1500719, type: 2}
+  - {fileID: 2100000, guid: e1944c774b2374c44a978835aa503a62, type: 2}
+  - {fileID: 2100000, guid: 5b5d5c7e16905a442880f47361ade476, type: 2}
+  - {fileID: 2100000, guid: 960dc19d89a99424eb5d03f28efe716d, type: 2}
+  - {fileID: 2100000, guid: e5ae15a48a3831448ba9b9a3184d4887, type: 2}
+  - {fileID: 2100000, guid: f6b6030e9c4565747887a187ad8da9a5, type: 2}
+  - {fileID: 2100000, guid: 02b3ad324e3aae64e88152d406bb7e71, type: 2}
+  - {fileID: 2100000, guid: 9e686b580b7278b4089e9925d6879aba, type: 2}
+  - {fileID: 2100000, guid: 870a9e8a20b53714e836c56f80cfca2d, type: 2}
+  - {fileID: 2100000, guid: 8b192440889de6c46bb979c2716615d2, type: 2}
+  - {fileID: 2100000, guid: 4ef7244dc625e4f4ca2dd3ab9136134c, type: 2}
+  - {fileID: 2100000, guid: c18b0dd7c109286448d8e354059d22e4, type: 2}
+  - {fileID: 2100000, guid: ee927614b284a684398220fa64c83eee, type: 2}
+  - {fileID: 2100000, guid: 536af9ce0aa457241b785868e603d59c, type: 2}
+  - {fileID: 2100000, guid: 45efc1bc47be3d847ad7ca7fad4cf8f3, type: 2}
+  - {fileID: 2100000, guid: 03cf2dac72a6bbf42857432c666c26b2, type: 2}
+  - {fileID: 2100000, guid: 12892250c8a2e054ea8dd9cf1131ab4d, type: 2}
+  - {fileID: 2100000, guid: 78d5ec93c063a9141a4e9f199d810ca4, type: 2}
+  - {fileID: 2100000, guid: 74f546c6284bae843932073b08cd23f3, type: 2}
+  - {fileID: 2100000, guid: cc8c943fe01c993418f8391e5f5d4683, type: 2}
+  - {fileID: 2100000, guid: 992d0cce8d8f33a4ead16fd7629eb0fe, type: 2}
+  - {fileID: 2100000, guid: 266ef24bd7b98204a86c71a55764aa80, type: 2}
+  - {fileID: 2100000, guid: 328c5cd009e73574ca6038e3e8d2f45a, type: 2}
+  - {fileID: 2100000, guid: 6512447f9560a6844ba2dca2c14bb154, type: 2}
+  - {fileID: 2100000, guid: 5974810e383bb4b458db375b5a0017af, type: 2}
+  - {fileID: 2100000, guid: c010a485db83e244a815c3633af3017b, type: 2}
+  - {fileID: 2100000, guid: 5f2fcf72bf838ab4fb67716040ce6a78, type: 2}
+  - {fileID: 2100000, guid: 36912cf2cb64eca4e8a981cea2f0a87e, type: 2}
+  - {fileID: 2100000, guid: 19144e6318da3d4449435e508353218d, type: 2}
+  - {fileID: 2100000, guid: 23308982536adce42a7faaab86ea7cca, type: 2}
+  - {fileID: 2100000, guid: 7ac51d5b025688146b7e1eb18675230a, type: 2}
+  - {fileID: 2100000, guid: 5660c291af7633146a3d92120dae7b65, type: 2}
+  - {fileID: 2100000, guid: 26fa59ad83787a94b8047fa55078d5bd, type: 2}
+  - {fileID: 2100000, guid: e398d3e31cd11a14cb32ed9c528f4530, type: 2}
+  - {fileID: 2100000, guid: bf9cb9af7d0a3444fbaa672b922cde88, type: 2}
+  - {fileID: 2100000, guid: e0ebd69bd3a303a4791fbc4d80dae477, type: 2}
+  - {fileID: 2100000, guid: d60cb74e72c423e4285528ee29aa3251, type: 2}
+  - {fileID: 2100000, guid: 83aa9468862de7f4bb37438fa6302bc7, type: 2}
+  - {fileID: 2100000, guid: 94bb295da645c8c4d8fc6202d2bdf941, type: 2}
+  - {fileID: 2100000, guid: 612b65db987e9034992cbe42480038ae, type: 2}
+  - {fileID: 2100000, guid: 512b549dc88f5214c96d5adfa9a51829, type: 2}
+  - {fileID: 2100000, guid: c5124a6d4548d2a48843ff7ee144c67b, type: 2}
+  - {fileID: 2100000, guid: 24b4d491c47be6945b3a7d33ce389a12, type: 2}
+  - {fileID: 2100000, guid: c2a0f8ef3d6691e438e775348a6d2f43, type: 2}
+  - {fileID: 2100000, guid: bb9f76837d2bf184bbe00a6c3f0018b3, type: 2}
+  - {fileID: 2100000, guid: e662c77c92b3a6341b332bcfd9d25a17, type: 2}
+  - {fileID: 2100000, guid: 087ea84b4ae906c4393bbfd2014ae609, type: 2}
+  - {fileID: 2100000, guid: c6fd64389f633174db29f30ffe4b00db, type: 2}
+  - {fileID: 2100000, guid: ffe9f1d58faf1fd47983591fc8d4dbc4, type: 2}
+  - {fileID: 2100000, guid: ed4aa28e9a291b0479e94d68b04df80c, type: 2}
+  - {fileID: 2100000, guid: 7a07d6fb34ab781409208d1486d2613e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 1
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1019463793
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: cc52c8694040fb048adf819690824290,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1019463789}
+  m_Mesh: {fileID: 4300002, guid: cc52c8694040fb048adf819690824290, type: 3}
+--- !u!4 &1019463794
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: cc52c8694040fb048adf819690824290, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1019463789}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1029386511
 GameObject:
   m_ObjectHideFlags: 0
@@ -15601,7 +15567,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1096353940
 MeshRenderer:
@@ -15657,24 +15623,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88493cf040d5a024c8d600c4502ad9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 5
+  closed_offset: {x: 0, y: 0, z: 0}
+  open_offset: {x: 0, y: -5.5, z: 0}
+  duration: 3
   recessed: 0
+  recess_offset: {x: 0, y: 0, z: 0}
+  recess_delay: 1
+  duration_recess: 0
   auto_reset: 1
   auto_reset_default: 5
   auto_reset_timer: 5
-  auto_reset_progress: 0
-  closed_offset: {x: 0, y: 0, z: 0}
-  recess_offset: {x: 0, y: 0, z: 0}
-  open_offset: {x: 0, y: -5.5, z: 0}
-  start_position: {x: 0, y: 0, z: 0}
-  current_position: {x: 0, y: 0, z: 0}
-  target_position: {x: 0, y: 0, z: 0}
-  recess_delay: 1
-  progress: 0
-  progress_normalized: 0
-  duration: 3
-  duration_recess: 0
-  state: 5
-  recessed_state: 0
 --- !u!65 &1096353943
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16780,7 +16739,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1238026656
 MeshRenderer:
@@ -16949,7 +16908,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1246904004
 MeshRenderer:
@@ -17004,24 +16963,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88493cf040d5a024c8d600c4502ad9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 5
+  closed_offset: {x: 0, y: 0, z: 0}
+  open_offset: {x: 0, y: 0, z: 2}
+  duration: 0.5
   recessed: 0
+  recess_offset: {x: 0, y: 0, z: 0}
+  recess_delay: 1
+  duration_recess: 0
   auto_reset: 1
   auto_reset_default: 5
   auto_reset_timer: 3
-  auto_reset_progress: 0
-  closed_offset: {x: 0, y: 0, z: 0}
-  recess_offset: {x: 0, y: 0, z: 0}
-  open_offset: {x: 0, y: 0, z: 2}
-  start_position: {x: 0, y: 0, z: 0}
-  current_position: {x: 0, y: 0, z: 0}
-  target_position: {x: 0, y: 0, z: 0}
-  recess_delay: 1
-  progress: 0
-  progress_normalized: 0
-  duration: 0.5
-  duration_recess: 0
-  state: 5
-  recessed_state: 0
 --- !u!64 &1246904007
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17065,7 +17017,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1251703830
 MeshRenderer:
@@ -17181,7 +17133,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1254791599
 MeshRenderer:
@@ -17236,24 +17188,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88493cf040d5a024c8d600c4502ad9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 5
+  closed_offset: {x: 0, y: 0, z: 0}
+  open_offset: {x: 0, y: 0, z: -2}
+  duration: 0.5
   recessed: 0
+  recess_offset: {x: 0, y: 0, z: 0}
+  recess_delay: 1
+  duration_recess: 0
   auto_reset: 1
   auto_reset_default: 5
   auto_reset_timer: 3
-  auto_reset_progress: 0
-  closed_offset: {x: 0, y: 0, z: 0}
-  recess_offset: {x: 0, y: 0, z: 0}
-  open_offset: {x: 0, y: 0, z: -2}
-  start_position: {x: 0, y: 0, z: 0}
-  current_position: {x: 0, y: 0, z: 0}
-  target_position: {x: 0, y: 0, z: 0}
-  recess_delay: 1
-  progress: 0
-  progress_normalized: 0
-  duration: 0.5
-  duration_recess: 0
-  state: 5
-  recessed_state: 0
 --- !u!64 &1254791602
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19178,7 +19123,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1429991067
 MeshRenderer:
@@ -19610,7 +19555,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1454206803
 MeshRenderer:
@@ -19667,24 +19612,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88493cf040d5a024c8d600c4502ad9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 5
+  closed_offset: {x: 0, y: 0, z: 0}
+  open_offset: {x: 1.5, y: 0, z: -0.375}
+  duration: 1
   recessed: 1
+  recess_offset: {x: 0, y: 0, z: -0.375}
+  recess_delay: 1
+  duration_recess: 1
   auto_reset: 1
   auto_reset_default: 5
   auto_reset_timer: 5
-  auto_reset_progress: 0
-  closed_offset: {x: 0, y: 0, z: 0}
-  recess_offset: {x: 0, y: 0, z: -0.375}
-  open_offset: {x: 1.5, y: 0, z: -0.375}
-  start_position: {x: 0, y: 0, z: 0}
-  current_position: {x: 0, y: 0, z: 0}
-  target_position: {x: 0, y: 0, z: 0}
-  recess_delay: 1
-  progress: 0
-  progress_normalized: 0
-  duration: 1
-  duration_recess: 1
-  state: 5
-  recessed_state: 0
 --- !u!65 &1454206806
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19755,7 +19693,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1463739841
 MeshRenderer:
@@ -19811,24 +19749,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88493cf040d5a024c8d600c4502ad9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 5
+  closed_offset: {x: 0, y: 0, z: 0}
+  open_offset: {x: 0.375, y: 0, z: -2.25}
+  duration: 1
   recessed: 1
+  recess_offset: {x: 0.375, y: 0, z: 0}
+  recess_delay: 1
+  duration_recess: 1
   auto_reset: 1
   auto_reset_default: 5
   auto_reset_timer: 4
-  auto_reset_progress: 0
-  closed_offset: {x: 0, y: 0, z: 0}
-  recess_offset: {x: 0.375, y: 0, z: 0}
-  open_offset: {x: 0.375, y: 0, z: -2.25}
-  start_position: {x: 0, y: 0, z: 0}
-  current_position: {x: 0, y: 0, z: 0}
-  target_position: {x: 0, y: 0, z: 0}
-  recess_delay: 1
-  progress: 0
-  progress_normalized: 0
-  duration: 1
-  duration_recess: 1
-  state: 5
-  recessed_state: 0
 --- !u!114 &1463739844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21180,7 +21111,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.124998, z: 3.124998}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1575748876
 MeshRenderer:
@@ -21235,24 +21166,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88493cf040d5a024c8d600c4502ad9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 5
+  closed_offset: {x: 0, y: 0, z: 0}
+  open_offset: {x: 0.375, y: 0, z: -1.5}
+  duration: 1
   recessed: 1
+  recess_offset: {x: 0.375, y: 0, z: 0}
+  recess_delay: 1
+  duration_recess: 1
   auto_reset: 1
   auto_reset_default: 5
   auto_reset_timer: 3
-  auto_reset_progress: 0
-  closed_offset: {x: 0, y: 0, z: 0}
-  recess_offset: {x: 0.375, y: 0, z: 0}
-  open_offset: {x: 0.375, y: 0, z: -1.5}
-  start_position: {x: 0, y: 0, z: 0}
-  current_position: {x: 0, y: 0, z: 0}
-  target_position: {x: 0, y: 0, z: 0}
-  recess_delay: 1
-  progress: 0
-  progress_normalized: 0
-  duration: 1
-  duration_recess: 1
-  state: 5
-  recessed_state: 0
 --- !u!65 &1575748879
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21290,7 +21214,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 627474751}
   - {fileID: 1096353939}
   - {fileID: 1630283409}
   - {fileID: 173029638}
@@ -21951,7 +21874,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1613851248
 MeshRenderer:
@@ -22006,24 +21929,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88493cf040d5a024c8d600c4502ad9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 5
+  closed_offset: {x: 0, y: 0, z: 0}
+  open_offset: {x: 0.375, y: 0, z: -2.25}
+  duration: 2
   recessed: 1
+  recess_offset: {x: 0.375, y: 0, z: 0}
+  recess_delay: 1
+  duration_recess: 1
   auto_reset: 1
   auto_reset_default: 5
   auto_reset_timer: 3
-  auto_reset_progress: 0
-  closed_offset: {x: 0, y: 0, z: 0}
-  recess_offset: {x: 0.375, y: 0, z: 0}
-  open_offset: {x: 0.375, y: 0, z: -2.25}
-  start_position: {x: 0, y: 0, z: 0}
-  current_position: {x: 0, y: 0, z: 0}
-  target_position: {x: 0.375, y: 0, z: 0}
-  recess_delay: 1
-  progress: 0
-  progress_normalized: 0
-  duration: 2
-  duration_recess: 1
-  state: 5
-  recessed_state: 0
 --- !u!114 &1613851251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22185,7 +22101,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1630283410
 MeshRenderer:
@@ -22240,24 +22156,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88493cf040d5a024c8d600c4502ad9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 5
+  closed_offset: {x: 0, y: 0, z: 0}
+  open_offset: {x: 2, y: 0, z: 0}
+  duration: 1
   recessed: 0
+  recess_offset: {x: 0, y: 0, z: 0}
+  recess_delay: 1
+  duration_recess: 0
   auto_reset: 1
   auto_reset_default: 5
   auto_reset_timer: 3
-  auto_reset_progress: 0
-  closed_offset: {x: 0, y: 0, z: 0}
-  recess_offset: {x: 0, y: 0, z: 0}
-  open_offset: {x: 2, y: 0, z: 0}
-  start_position: {x: 0, y: 0, z: 0}
-  current_position: {x: 0, y: 0, z: 0}
-  target_position: {x: 0, y: 0, z: 0}
-  recess_delay: 1
-  progress: 0
-  progress_normalized: 0
-  duration: 1
-  duration_recess: 0
-  state: 5
-  recessed_state: 0
 --- !u!64 &1630283413
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26247,7 +26156,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1958373051
 MeshRenderer:
@@ -26303,24 +26212,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88493cf040d5a024c8d600c4502ad9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 0
+  closed_offset: {x: 0, y: 0, z: 0}
+  open_offset: {x: 0, y: -3.375, z: 0}
+  duration: 3
   recessed: 0
+  recess_offset: {x: 0, y: 0, z: 0}
+  recess_delay: 1
+  duration_recess: 0
   auto_reset: 1
   auto_reset_default: 0
   auto_reset_timer: 3
-  auto_reset_progress: 0
-  closed_offset: {x: 0, y: 0, z: 0}
-  recess_offset: {x: 0, y: 0, z: 0}
-  open_offset: {x: 0, y: -3.375, z: 0}
-  start_position: {x: 0, y: 0, z: 0}
-  current_position: {x: 0, y: 0, z: 0}
-  target_position: {x: 0, y: 0, z: 0}
-  recess_delay: 1
-  progress: 0
-  progress_normalized: 0
-  duration: 3
-  duration_recess: 0
-  state: 0
-  recessed_state: 0
 --- !u!64 &1958373054
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26608,7 +26510,7 @@ Transform:
   m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
   m_Children: []
   m_Father: {fileID: 1587435775}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1981710130
 MeshRenderer:
@@ -26677,24 +26579,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88493cf040d5a024c8d600c4502ad9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 0
+  closed_offset: {x: 0, y: 0, z: 0}
+  open_offset: {x: 0, y: -1.55, z: 0}
+  duration: 1
   recessed: 0
+  recess_offset: {x: 0, y: 0, z: 0}
+  recess_delay: 1
+  duration_recess: 0
   auto_reset: 1
   auto_reset_default: 0
   auto_reset_timer: 3
-  auto_reset_progress: 0
-  closed_offset: {x: 0, y: 0, z: 0}
-  recess_offset: {x: 0, y: 0, z: 0}
-  open_offset: {x: 0, y: -1.55, z: 0}
-  start_position: {x: 0, y: 0, z: 0}
-  current_position: {x: 0, y: 0, z: 0}
-  target_position: {x: 0, y: 0, z: 0}
-  recess_delay: 1
-  progress: 0
-  progress_normalized: 0
-  duration: 1
-  duration_recess: 0
-  state: 0
-  recessed_state: 0
 --- !u!1 &1982684282
 GameObject:
   m_ObjectHideFlags: 0
