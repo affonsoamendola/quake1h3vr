@@ -39,7 +39,6 @@ public class QuakeDoor : MonoBehaviour
 
 	private float progress;
 	private float progress_normalized;
-
 	
 	private QUAKE_DOOR_STATE recessed_state;
 	
